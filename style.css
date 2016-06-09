@@ -1,12 +1,32 @@
-body {
-    background-color: #05101F;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    height: 100vh;
+    margin: 0;
+}
+
+.top-half {
+    background: linear-gradient(#05101F, #0B2445);
+    min-height: 90%;
+    margin: 0;
+    position: relative;
+}
+
+.bottom-half {
+    background-color: #0B2445;
+    height: 10%;
 }
 
 div.box {
     max-width: 400px;
     padding: 12px;
-    position: relative;
-    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.inner-box {
