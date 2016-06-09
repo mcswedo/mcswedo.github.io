@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    height: 100vh;
+    margin: 0;
+}
+
+.top-half {
+    background: linear-gradient(#05101F, #0B2445);
+    min-height: 90%;
+    margin: 0;
+    position: relative;
+}
+
+.bottom-half {
+    background-color: #0B2445;
+    height: 10%;
+}
+
+div.box {
+    max-width: 400px;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.inner-box {
+    border: 1px solid #076987;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+span.name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    color: #73FDFF;
+}
+
+div.name-line {
+    height: 1px;
+    background-color: #0B2542;
+    margin: 10px;
+}
+
+span.title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #076987;
+}
+
+.line {
+    background-color: #0092B3;
+    position: absolute;
+}
+
+.line-horiz {
+    height: 3px;
+    width: 100%;
+}
+
+.line1a, .line3a {
+    transform: scaleX(1);
+    animation: line1anim 5s linear 0s infinite normal;
+}
+
+.line1b, .line3b {
+    transform: scaleX(0);
+    animation: line1banim 5s linear 0s infinite normal;
+}
+
+.line1a, .line1b {
+    top: 0;
+    left: 0;
+}
+
+.line1a {
+    transform-origin: 100% 0;
+}
+
+.line1b {
+    transform-origin: 0 0;
+}
+
+.line3a, .line3b {
+    bottom: 0;
+    left: 0;
+}
+
+.line3a {
+    transform-origin: 0 0;
+}
+
+.line3b {
+    transform-origin: 100% 0;
+}
+
+@keyframes line1anim {
+    0% {  transform: scaleX(1);}
+    50% {  transform: scaleX(0);}
+    100% {  transform: scaleX(0);}
+}
+
+@keyframes line1banim {
+    0% {  transform: scaleX(0);}
+    50% {  transform: scaleX(0);}
+    100% {  transform: scaleX(1);}
+}
+
+.line-verti {
+    width: 3px;
+    height: 100%;
+}
+
+
+.line2a, .line4a {
+    transform: scaleY(0);
+    animation: line2anim 5s linear 0s infinite normal;
+}
+
+.line2b, .line4b {
+    transform: scaleY(1);
+    animation: line2banim 5s linear 0s infinite normal;
+}
+
+.line2a, .line2b {
+    top: 0;
+    right: 0;
+}
+
+.line2a {
+    transform-origin: 0% 0;
+}
+
+.line2b {
+    transform-origin: 0 100%;
+}
+
+.line4a, .line4b {
+    top: 0;
+    left: 0;
+}
+
+.line4a {
+    transform-origin: 0 100%;
+}
+
+.line4b {
+    transform-origin: 0 0;
+}
+
+@keyframes line2anim {
+    0% {  transform: scaleY(0);visibility:visible;}
+    50% {  transform: scaleY(1);visibility:hidden;}
+    100% {  transform: scaleY(0); visibility:hidden;}
+}
+
+@keyframes line2banim {
+    0% {  transform: scaleY(1);visibility:hidden;}
+    50% {  transform: scaleY(1);visibility:hidden;}
+    100% {  transform: scaleY(0);visibility:visible;}
+}
