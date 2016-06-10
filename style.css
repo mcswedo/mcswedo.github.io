@@ -238,7 +238,7 @@ span.title {
 }
 
 .about-container {
-    width: 80%;
+    max-width: 1000px;
     margin: 30px auto;
 }
 
@@ -290,17 +290,38 @@ p {
     text-align: center;
 }
 
+#email, #twitter, #linkedin {
+    display: inline-block;
+    background-color: #0B2445;
+    position: relative;
+    height: 40px;
+    width: 41px;
+    border-radius: 7px;
+    transition: background-color .5s;
+    margin: 10px;
+}
 
+#email:hover, #twitter:hover, #linkedin:hover {
+    background-color: #C7DBF0;
+}
 
 .column2 p, .column1 .fa {
     color: #0B2445;
     transition: color .5s;
 }
 
+.column1 .fa {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    color: #C7DBF0;
+}
+
 .column1 .fa:hover {
     color: #2AA0DB;
-
 }
+
+
 
 .projects {
     background-color: #E0F2FF;
