@@ -260,7 +260,10 @@ span.title {
 
 h2 {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 3em;
+    color: #114273;
+    font-weight: 400;
+    font-size: 3.5em;
+    text-align: center;
 }
 
 p {
@@ -287,11 +290,7 @@ p {
     text-align: center;
 }
 
-.column2 h2 {
-    color: #114273;
-    font-weight: 400;
-    font-size: 3.5em;
-}
+
 
 .column2 p, .column1 .fa {
     color: #0B2445;
