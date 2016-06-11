@@ -233,7 +233,6 @@ span.title {
 }
 
 .about {
-    min-height: 100vh;
     background-color: #C7DBF0;
     padding: 30px 0;
     -webkit-box-sizing: border-box;
