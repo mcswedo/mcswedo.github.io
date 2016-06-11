@@ -16,13 +16,8 @@
     min-height: 90%;
     margin: 0;
 }
-
-.bottom-half {
-    height: 10%;
-}
-
 div.box {
-    max-width: 400px;
+    width: 400px;
     padding: 12px;
     position: absolute;
     top: 50%;
@@ -251,7 +246,7 @@ span.title {
 .about-container, .projects-container {
     max-width: 1000px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -260,7 +255,7 @@ h2 {
     font-family: 'Rajdhani', sans-serif;
     color: #114273;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 56px;
     line-height: 1em;
     border-bottom: 2px solid #91BFE6;
 }
@@ -268,8 +263,8 @@ h2 {
 p {
     font-family: 'PT Serif', serif;
     margin: 1em 0;
-    line-height: 1.6em;
-    font-size: 1.4em;
+    line-height: 1.8em;
+    font-size: 1.2em;
 }
 
 
@@ -312,12 +307,13 @@ p {
 .projects {
     background: #05101F ;
     min-height: 100vh;
-    padding: 30px 0;
+    padding: 30px 0 ;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
 }
+
 
 .projects-container h2 {
     color: #2AA0DB;
@@ -330,7 +326,6 @@ p {
     padding: 0;
     position: relative;
     overflow: hidden;
-
 }
 
 .project-big {
@@ -390,4 +385,22 @@ p {
 .project-big:hover .description, .project-small:hover .description {
     left: 30px;
     opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+
+    .project-big, .project-small {
+        width: 100%;
+
+    }
+    .project-big img {
+        width: 150%;
+        position: relative;
+        left: -25%;
+    }
+
+    .project-small img {
+        height: 70%;
+    }
+
 }
