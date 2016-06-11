@@ -6,17 +6,18 @@
 .landing {
     height: 100vh;
     margin: 0;
-}
-
-.top-half {
-    background: linear-gradient(#05101F, #0B2445);
-    min-height: 90%;
-    margin: 0;
+    background-image: url('landingbackground.png');
+    background-color: #05101F;
+    background-position: 300px 300px;
     position: relative;
 }
 
+.top-half {
+    min-height: 90%;
+    margin: 0;
+}
+
 .bottom-half {
-    background-color: #0B2445;
     height: 10%;
 }
 
@@ -57,6 +58,7 @@ div.inner-box {
     -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+    background-color: rgba(5,16,31,.7);
 }
 
 span.name {
@@ -263,14 +265,13 @@ h2 {
     color: #114273;
     font-weight: 400;
     font-size: 3.5em;
-    text-align: center;
 }
 
 p {
     font-family: 'PT Serif', serif;
     margin: 1em 0;
     line-height: 1.6em;
-    font-size: 14pt;
+    font-size: 1.4em;
 }
 
 
@@ -295,7 +296,7 @@ p {
     background-color: #0B2445;
     position: relative;
     height: 40px;
-    width: 41px;
+    width: 40px;
     border-radius: 7px;
     transition: background-color .5s;
     margin: 10px;
